@@ -35,7 +35,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	background-color: var(--white);
-	border-radius: 10px;
+	border-radius: 4px;
 	animation: float 5s infinite;
 	transition: box-shadow 0.5s ease-in-out;
 	padding: 2rem 5rem;

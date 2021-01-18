@@ -2,17 +2,16 @@
 
 :root {
 	--body: linear-gradient(to right bottom, #d6bb20, #f88728);
-	--orange: #ffae00;
 	--blue-active: #6375ff;
-	--white: #e9e9e9;
+	--white: #f7f7f7;
 	--text-gray: rgb(184, 184, 184);
-	--orange-warning: #ff8800;
+	--orange: #ff8800;
 	--gray: #555555;
 }
 
 html,
 body {
-	max-width: 100%;
+	max-width: 100vw;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -66,17 +65,14 @@ body {
 	display: none;
 }
 .contact {
-	background: var(--orange-warning);
+	background: var(--orange);
 	color: var(--white) !important;
 	font-weight: 600;
 	border-radius: 10px;
-	transition: background 0.3s;
+	transition: background 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.navbar {
 		padding: 0;
 	}
