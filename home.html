@@ -4,6 +4,25 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>COVID-19 Tracker</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="css/navbar.css" />
 	</head>
-	<body></body>
+	<body>
+		<nav class="navbar" id="navbar">
+			<a class="nav-brand">COVID-19 Tracker</a>
+			<a href="#contact" class="nav-item contact">Contact</a>
+			<a href="#news" class="nav-item">Province</a>
+			<a href="#home" class="nav-item active">Home</a>
+			<a class="icon nav-responsive" onclick="navbar()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+		<section class="wrapper">
+			<div class="container"></div>
+		</section>
+		<script src="js/navbar.js"></script>
+	</body>
 </html>

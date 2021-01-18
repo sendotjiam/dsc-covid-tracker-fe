@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f7f7f7;
+}
+
+.navbar {
+	overflow: hidden;
+	background: linear-gradient(to right bottom, #73bcf9, #7a96f8);
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.navbar .nav-brand,
+.navbar .nav-item,
+.navbar .nav-responsive {
+	float: left;
+	display: block;
+	color: #f7f7f7;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1rem;
+	margin: 0.5rem;
+}
+
+.navbar .nav-item,
+.navbar .nav-responsive {
+	float: right;
+}
+
+.navbar .nav-brand {
+	font-weight: 700;
+}
+
+.navbar .nav-item:hover,
+.navbar .nav-item.active {
+	background: #fcbf1e;
+	border-radius: 10px;
+	transition: background 0.3s;
+}
+
+.navbar .icon {
+	display: none;
+}
+
+.contact:hover {
+	background: #ff8800 !important;
+}
+.contact:hover::after {
+	content: " Layanan Bantuan 081234567890";
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
+	.navbar {
+		padding: 0;
+	}
+	.navbar a:not(:first-child) {
+		display: none;
+	}
+	.navbar a.icon {
+		float: right;
+		display: block;
+	}
+	.navbar.responsive {
+		position: relative;
+	}
+	.navbar.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
