@@ -1,12 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+	--body: linear-gradient(to right bottom, #d6bb20, #f88728);
+	--orange: #ffae00;
+	--blue-active: #6375ff;
+	--white: #e9e9e9;
+	--text-gray: rgb(184, 184, 184);
+	--orange-warning: #ff8800;
+	--gray: #555555;
+}
+
+html,
 body {
+	max-width: 100%;
+	height: 100%;
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	background: #f7f7f7;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	background: var(--body);
+	overflow-x: hidden;
 }
 
 .navbar {
 	overflow: hidden;
-	background: linear-gradient(to right bottom, #73bcf9, #7a96f8);
 	padding-left: 3rem;
 	padding-right: 3rem;
 }
@@ -16,7 +33,7 @@ body {
 .navbar .nav-responsive {
 	float: left;
 	display: block;
-	color: #f7f7f7;
+	color: var(--white);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -29,26 +46,31 @@ body {
 	float: right;
 }
 
+.navbar .nav-item {
+	color: var(--gray);
+}
+
 .navbar .nav-brand {
 	font-weight: 700;
 }
 
 .navbar .nav-item:hover,
 .navbar .nav-item.active {
-	background: #fcbf1e;
+	color: var(--white);
+	font-weight: 600;
 	border-radius: 10px;
-	transition: background 0.3s;
+	transition: color 0.3s;
 }
 
 .navbar .icon {
 	display: none;
 }
-
-.contact:hover {
-	background: #ff8800 !important;
-}
-.contact:hover::after {
-	content: " Layanan Bantuan 081234567890";
+.contact {
+	background: var(--orange-warning);
+	color: var(--white) !important;
+	font-weight: 600;
+	border-radius: 10px;
+	transition: background 0.3s;
 }
 
 @media screen and (max-width: 600px) {

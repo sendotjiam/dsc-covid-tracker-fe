@@ -9,20 +9,47 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 		<link rel="stylesheet" href="css/navbar.css" />
+		<link rel="stylesheet" href="css/home/home.css" />
 	</head>
 	<body>
 		<nav class="navbar" id="navbar">
 			<a class="nav-brand">COVID-19 Tracker</a>
-			<a href="#contact" class="nav-item contact">Contact</a>
-			<a href="#news" class="nav-item">Province</a>
+			<a href="#contact" class="nav-item contact"
+				>Layanan Darurat 0811 1211 2112</a
+			>
+			<a href="province.html" class="nav-item">Province</a>
 			<a href="#home" class="nav-item active">Home</a>
 			<a class="icon nav-responsive" onclick="navbar()">
 				<i class="fa fa-bars"></i>
 			</a>
 		</nav>
-		<section class="wrapper">
-			<div class="container"></div>
+		<section class="container">
+			<div class="content">
+				<p id="title">Wujudkan Indonesia, Sehat, Aman, dan Produktif</p>
+				<p id="sub-title">INDONESIA TANGGAP COVID-19</p>
+			</div>
+			<div class="main-card">
+				<div class="card">
+					<span class="numbers">2312123</span
+					><span class="card-text">Total Case</span>
+				</div>
+			</div>
+			<div class="sub-card">
+				<div class="card">
+					<span class="numbers">2312123</span
+					><span class="card-text">Positive</span>
+				</div>
+				<div class="card">
+					<span class="numbers">2312123</span
+					><span class="card-text">Recovered</span>
+				</div>
+				<div class="card">
+					<span class="numbers">2312123</span
+					><span class="card-text">Death</span>
+				</div>
+			</div>
 		</section>
 		<script src="js/navbar.js"></script>
+		<script src="js/home/home.js"></script>
 	</body>
 </html>
