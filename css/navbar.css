@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
 :root {
-	--body: linear-gradient(to right bottom, #d6bb20, #f88728);
+	--body: linear-gradient(to right bottom, #ffda08, #f88728);
 	--blue-active: #6375ff;
-	--white: #f7f7f7;
+	--white: #ffffff;
 	--text-gray: rgb(184, 184, 184);
 	--orange: #ff8800;
 	--gray: #555555;

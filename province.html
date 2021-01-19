@@ -10,6 +10,7 @@
 		/>
 		<link rel="stylesheet" href="css/navbar.css" />
 		<link rel="stylesheet" href="css/province/province.css" />
+		<link rel="shortcut icon" href="coronavirus.png" type="image/x-icon" />
 	</head>
 	<body>
 		<nav class="navbar" id="navbar">
@@ -29,6 +30,8 @@
 					type="text"
 					class="search-input"
 					placeholder="search your province..."
+					id="search-bar"
+					onkeyup="filterSearch(this)"
 				/>
 				<button type="submit" class="search-btn">
 					<i class="fa fa-search"></i>
@@ -36,57 +39,7 @@
 			</div>
 		</section>
 		<section class="container">
-			<div class="main-card">
-				<div class="card">
-					<div class="card-title city">#1<span>DKI Jakarta</span></div>
-					<div class="card-content positive">
-						<span>2312123</span><span>Positive</span>
-					</div>
-					<div class="card-content recover">
-						<span>2312123</span><span>Recovered</span>
-					</div>
-					<div class="card-content death">
-						<span>2312123</span><span>Death</span>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-title city">#1<span>DKI Jakarta</span></div>
-					<div class="card-content positive">
-						<span>2312123</span><span>Positive</span>
-					</div>
-					<div class="card-content recover">
-						<span>2312123</span><span>Recovered</span>
-					</div>
-					<div class="card-content death">
-						<span>2312123</span><span>Death</span>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-title city">#1<span>DKI Jakarta</span></div>
-					<div class="card-content positive">
-						<span>2312123</span><span>Positive</span>
-					</div>
-					<div class="card-content recover">
-						<span>2312123</span><span>Recovered</span>
-					</div>
-					<div class="card-content death">
-						<span>2312123</span><span>Death</span>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-title city">#1<span>DKI Jakarta</span></div>
-					<div class="card-content positive">
-						<span>2312123</span><span>Positive</span>
-					</div>
-					<div class="card-content recover">
-						<span>2312123</span><span>Recovered</span>
-					</div>
-					<div class="card-content death">
-						<span>2312123</span><span>Death</span>
-					</div>
-				</div>
-			</div>
+			<div class="main-card" id="main-card"></div>
 		</section>
 		<script src="js/navbar.js"></script>
 		<script src="js/province/province.js"></script>
