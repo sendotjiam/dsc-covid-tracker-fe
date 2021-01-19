@@ -25,18 +25,14 @@ const loadProvinceData = () => {
 			console.log("Error: " + error);
 		});
 };
-
 loadProvinceData();
 
 const filterSearch = (event) => {
 	const provinceValue = event.value.toLowerCase();
-	const filteredProvince = provinceList.filter((data) => {
-		console.log(data);
+	const filteredProvince = provinceList[0].filter((data) => {
 		return data.provinsi.toLowerCase().includes(provinceValue);
 	});
-	console.log(filteredProvince);
-	// const datas = filteredProvince.data;
-	// displayProvinceCards(datas);
+	displayProvinceCards(filteredProvince);
 };
 
 const displayProvinceCards = (datas) => {
