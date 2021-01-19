@@ -1,10 +1,13 @@
+const URL = "https://indonesia-covid-19.mathdro.id/api/provinsi";
+const GET = "GET";
 const cards = document.getElementById("main-card");
 const search = document.getElementById("search-bar");
 let provinceList = [];
 
 const loadProvinceData = () => {
-	fetch("https://indonesia-covid-19.mathdro.id/api/provinsi", {
-		method: "GET",
+	displayLoader();
+	fetch(URL, {
+		method: GET,
 	})
 		.then((res) => {
 			if (res.ok === true) {
@@ -17,11 +20,13 @@ const loadProvinceData = () => {
 			}
 		})
 		.then((res) => {
+			// hideLoader();
 			const datas = res.data;
 			provinceList.push(datas);
 			displayProvinceCards(datas);
 		})
 		.catch((error) => {
+			// hideLoader();
 			console.log("Error: " + error);
 		});
 };
