@@ -7,7 +7,7 @@ const death = document.getElementById("death");
 const container = document.getElementById("container");
 
 const loadData = () => {
-	displayLoader(2000);
+	displayLoader(3000);
 	fetch(URL, {
 		method: GET,
 	})

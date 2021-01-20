@@ -5,7 +5,7 @@ const search = document.getElementById("search-bar");
 let provinceList = [];
 
 const loadProvinceData = () => {
-	displayLoader(2000);
+	displayLoader(3000);
 	fetch(URL, {
 		method: GET,
 	})
@@ -42,7 +42,7 @@ const filterSearch = (event) => {
 };
 
 const displayProvinceCards = (datas) => {
-	let x = datas
+	let displayedData = datas
 		.map((data) => {
 			return `
 			<div class="card" id="card">
@@ -59,5 +59,5 @@ const displayProvinceCards = (datas) => {
 			</div>`;
 		})
 		.join(" ");
-	cards.innerHTML = x;
+	cards.innerHTML = displayedData;
 };
