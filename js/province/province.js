@@ -5,7 +5,7 @@ const search = document.getElementById("search-bar");
 let provinceList = [];
 
 const loadProvinceData = () => {
-	displayLoader();
+	displayLoader(2000);
 	fetch(URL, {
 		method: GET,
 	})
@@ -20,13 +20,13 @@ const loadProvinceData = () => {
 			}
 		})
 		.then((res) => {
-			// hideLoader();
+			hideLoader();
 			const datas = res.data;
 			provinceList.push(datas);
 			displayProvinceCards(datas);
 		})
 		.catch((error) => {
-			// hideLoader();
+			hideLoader();
 			console.log("Error: " + error);
 		});
 };
@@ -35,6 +35,7 @@ loadProvinceData();
 const filterSearch = (event) => {
 	const provinceValue = event.value.toLowerCase();
 	const filteredProvince = provinceList[0].filter((data) => {
+		displayLoader(300);
 		return data.provinsi.toLowerCase().includes(provinceValue);
 	});
 	displayProvinceCards(filteredProvince);

@@ -7,7 +7,7 @@ const death = document.getElementById("death");
 const container = document.getElementById("container");
 
 const loadData = () => {
-	displayLoader();
+	displayLoader(2000);
 	fetch(URL, {
 		method: GET,
 	})
@@ -22,14 +22,14 @@ const loadData = () => {
 			}
 		})
 		.then((data) => {
-			// hideLoader();
+			hideLoader();
 			totalCases.innerHTML = data.jumlahKasus;
 			positive.innerHTML = data.perawatan;
 			recovered.innerHTML = data.sembuh;
 			death.innerHTML = data.meninggal;
 		})
 		.catch((error) => {
-			// hideLoader();
+			hideLoader();
 			console.log("Error: " + error);
 		});
 };

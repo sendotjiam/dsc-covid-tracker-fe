@@ -43,6 +43,10 @@
 	cursor: pointer;
 }
 
+.sub-card .card {
+	width: 33%;
+}
+
 .main-card .card:hover,
 .sub-card .card:hover {
 	box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.7);
@@ -90,7 +94,10 @@
 		flex-direction: column;
 	}
 	.sub-card .card {
-		/* flex-wrap: wrap; */
 		margin: 2rem 0;
+	}
+	.main-card .card,
+	.sub-card .card {
+		width: 70% !important;
 	}
 }
